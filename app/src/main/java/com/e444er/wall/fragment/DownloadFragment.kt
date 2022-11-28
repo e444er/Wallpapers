@@ -22,6 +22,7 @@ class DownloadFragment : Fragment(R.layout.download_fragment) {
         super.onViewCreated(view, savedInstanceState)
         loadWall(args.imageData[0])
         addCallBack()
+        bottomSheet()
     }
 
     private fun loadWall(url: String) {
@@ -39,6 +40,13 @@ class DownloadFragment : Fragment(R.layout.download_fragment) {
     private fun addCallBack() {
         binding.backButton.setOnClickListener {
             findNavController().popBackStack()
+        }
+    }
+
+    private fun bottomSheet() {
+        val bottomSheetFragment = BottomSheetFragment(args.imageData[0])
+        binding.downloadButton.setOnClickListener {
+            bottomSheetFragment.show(requireActivity().supportFragmentManager, "bottomSheetDialog")
         }
     }
 

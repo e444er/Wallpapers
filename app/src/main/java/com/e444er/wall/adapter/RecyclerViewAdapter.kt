@@ -45,7 +45,8 @@ class RecyclerViewAdapter(private val navId: Int) :
                 .placeholder(blur)
                 .into(imageView)
         }
-        holder.itemView.setOnClickListener { v ->
+        holder.itemView.setOnClickListener {v ->
+
             val imageData = arrayOf(
                 image?.fullImageUrl.toString(),
                 image?.blurHash.toString()

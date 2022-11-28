@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/bottom_sheets_menu"
+    tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/downLoadFromNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:background="#595555"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_downward_24"
+        android:drawablePadding="@dimen/_70sdp"
+        android:elevation="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/actor"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp" />
+
+<Button
+    android:id="@+id/setAsBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_30sdp"
+    android:drawableEnd="@drawable/ic_baseline_wallpaper_24"
+    android:drawablePadding="@dimen/_70sdp"
+    android:elevation="@dimen/_10sdp"
+    android:textColor="@color/white"
+    android:fontFamily="@font/actor"
+    android:gravity="left|center_vertical"
+    android:paddingStart="@dimen/_10sdp"
+    android:text="Background"
+    android:textAllCaps="false"
+    android:textSize="@dimen/_12ssp" />
+
+<Button
+    android:id="@+id/setAsLockscreen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_30sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+    android:drawablePadding="@dimen/_70sdp"
+    android:textColor="@color/white"
+    android:elevation="@dimen/_10sdp"
+    android:fontFamily="@font/actor"
+    android:gravity="left|center_vertical"
+    android:paddingStart="@dimen/_10sdp"
+    android:text="Lockscreen"
+    android:textAllCaps="false"
+    android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>
