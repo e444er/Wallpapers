@@ -15,9 +15,7 @@ import com.e444er.wall.util.BlurHashDecoder
 class RecyclerViewAdapter() :
     PagingDataAdapter<Data, RecyclerViewAdapter.MyViewHolder>(DiffUtilCallBack()) {
 
-
     inner class MyViewHolder(val binding: ItemViewBinding) : RecyclerView.ViewHolder(binding.root)
-
 
     override fun onCreateViewHolder(
         parent: ViewGroup,

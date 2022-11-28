@@ -20,7 +20,6 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
     private val viewModel: HomeViewModel by viewModels()
     private val mAdapter by lazy { RecyclerViewAdapter() }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.rvHome.adapter = mAdapter

@@ -19,7 +19,7 @@
             app:collapsedTitleTextAppearance="@style/Toolbar.TitleText.collapse"
             app:expandedTitleGravity="center_vertical|center_horizontal|bottom"
             app:expandedTitleTextAppearance="@style/Toolbar.TitleText.expanded"
-            app:expandedTitleTextColor="@color/white"
+            app:expandedTitleTextColor="@color/gray"
             app:layout_scrollFlags="scroll|enterAlways|snap|snapMargins"
             app:titleCollapseMode="fade">
 
@@ -28,7 +28,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:contentScrim="@color/white"
+                app:contentScrim="@color/gray"
                 app:navigationContentDescription="menu">
 
                 <TextView
