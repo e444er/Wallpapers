@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.e444er.wall.R
 import com.e444er.wall.adapter.RecyclerViewAdapter
 import com.e444er.wall.databinding.HomeFragmentBinding
+import com.e444er.wall.util.Constants
 import com.e444er.wall.util.viewBinding
 import com.e444er.wall.viewmodel.HomeViewModel
 import kotlinx.coroutines.flow.collectLatest
@@ -18,7 +19,7 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
 
     private val binding: HomeFragmentBinding by viewBinding()
     private val viewModel: HomeViewModel by viewModels()
-    private val mAdapter by lazy { RecyclerViewAdapter() }
+    private val mAdapter by lazy { RecyclerViewAdapter(Constants.NavigationIntent.FromHomeToDownload) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -8,6 +8,7 @@ import androidx.lifecycle.lifecycleScope
 import com.e444er.wall.R
 import com.e444er.wall.adapter.RecyclerViewAdapter
 import com.e444er.wall.databinding.PopularFragmentBinding
+import com.e444er.wall.util.Constants
 import com.e444er.wall.util.viewBinding
 import com.e444er.wall.viewmodel.PopularViewModel
 import kotlinx.coroutines.flow.collectLatest
@@ -17,7 +18,7 @@ class PopularFragment : Fragment(R.layout.popular_fragment) {
 
     private val binding: PopularFragmentBinding by viewBinding()
     private val viewModel: PopularViewModel by viewModels()
-    private val mAdapter by lazy { RecyclerViewAdapter() }
+    private val mAdapter by lazy { RecyclerViewAdapter(Constants.NavigationIntent.FromHomeToDownload) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -9,6 +9,7 @@ import com.e444er.wall.R
 import com.e444er.wall.adapter.RecyclerViewAdapter
 import com.e444er.wall.databinding.PopularFragmentBinding
 import com.e444er.wall.databinding.RandomFragmentBinding
+import com.e444er.wall.util.Constants
 import com.e444er.wall.util.viewBinding
 import com.e444er.wall.viewmodel.PopularViewModel
 import com.e444er.wall.viewmodel.RandomViewModel
@@ -19,7 +20,7 @@ class RandomFragment:Fragment(R.layout.random_fragment) {
 
     private val binding: RandomFragmentBinding by viewBinding()
     private val viewModel: RandomViewModel by viewModels()
-    private val mAdapter by lazy { RecyclerViewAdapter() }
+    private val mAdapter by lazy { RecyclerViewAdapter(Constants.NavigationIntent.FromHomeToDownload) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
