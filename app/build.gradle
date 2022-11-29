@@ -67,16 +67,6 @@ dependencies {
     //fragments
     implementation "androidx.fragment:fragment-ktx:1.5.4"
 
-    //sdp ssp
-    implementation 'com.intuit.ssp:ssp-android:1.1.0'
-    implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
-    //Google ads
-//    implementation 'com.google.android.gms:play-services-ads:21.2.0'
-
-    implementation 'com.flaviofaria:kenburnsview:1.0.7'
-
-
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
 }

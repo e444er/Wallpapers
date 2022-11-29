@@ -7,7 +7,7 @@
     android:focusable="true"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardCornerRadius="10dp"
     app:layout_constraintEnd_toStartOf="@+id/guideline2"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +30,7 @@
         android:fontFamily="@font/archivo_black"
         android:text="@string/categories"
         android:textColor="@color/white"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="15sp"
         android:textStyle="bold">
 
     </TextView>

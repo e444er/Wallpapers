@@ -38,7 +38,7 @@ class RecyclerViewAdapter(private val navId: Int) :
         holder.binding.apply {
             Glide.with(root)
                 .asBitmap()
-                .load(image?.fullImageUrl)
+                .load(image?.smallImageUrl)
                 .centerCrop()
                 .error(blur)
                 .transition(BitmapTransitionOptions.withCrossFade(80))

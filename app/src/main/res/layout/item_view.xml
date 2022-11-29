@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/_2sdp"
+    android:layout_margin="2dp"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardBackgroundColor="@color/toolbar"
-    app:cardCornerRadius="@dimen/_7sdp">
+    app:cardCornerRadius="7dp">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_200sdp"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
         android:focusable="true"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
